@@ -100,7 +100,7 @@
         # Additional Assetic rules for environments different from dev,
         # remember to run php app/console assetic:dump --env=prod
         RewriteCond %{ENV:SYMFONY_ENV} !^(dev)
-        RewriteRule ^/(css|js|fonts?)/.*\.(css|js|otf|eot|ttf|svg|woff) - [L]
+        RewriteRule ^/(css|js|fonts?|images)/.*\.(css|js|otf|eot|ttf|svg|woff|jpe?g|gif|png|ico) - [L]
 
         RewriteRule .* /app.php
     </IfModule>
